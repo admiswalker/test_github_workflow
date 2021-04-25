@@ -1,0 +1,17 @@
+name: main_test_GitHubWorkflow
+
+on:
+  push:
+
+jobs:
+  build:
+   runs-on: ubuntu-18.04
+   steps:
+   - uses: actions/checkout@v2
+   - name: hello_GHWF
+     run: |
+       echo "Hello, GitHub Workflow !!"
+       pwd
+       ls
+
+
